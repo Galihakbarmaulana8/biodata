@@ -20,7 +20,7 @@ class userC extends Controller
             'name' => 'required',
             'email' => 'required|unique:users',
             'password' => 'required',
-            'password_confirm' => 'required|same:password',
+            'password_con   firm' => 'required|same:password',
         ]);
 
         $user = new User([

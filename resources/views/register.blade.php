@@ -27,7 +27,7 @@
       <p class="alert alert-danger">{{ $err }}</p>
       @endforeach
       @endif
-      <form action="{{ route('register.action') }}" method="post">
+      <form action="{{ route('register.action')}}" method="post">
         @csrf
         <div class="input-group mb-3">
           <input name="name" value="{{ old('name') }}" type="text" class="form-control" placeholder="Full name">
